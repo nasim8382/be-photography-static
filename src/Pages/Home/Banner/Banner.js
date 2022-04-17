@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import sliderImg1 from '../../../images/banner/banner1.png';
 import sliderImg2 from '../../../images/banner/banner2.png';
 import sliderImg3 from '../../../images/banner/banner3.png';
@@ -18,27 +19,25 @@ const Banner = () => {
                   <div className="carousel-item active">
                     <img src={sliderImg1} className="d-block carousel-image" alt="..."/>
                     <div className="carousel-caption d-md-block">
-                      <h1 className="carousel-text-heading">PHOTOGRAPHERS</h1>
-                     <p className="carousel-text-paragraph opacity-75">We want to make your momment happy. We have covered many national and international event successfully. <br/> So if you want to make your time enjoyable, we are here to welcome you.</p>
-                     <button type="button" className="carousel-btn btn px-4 contact-btn">
-                    <a className="text-white" href="https://www.diccbd.com/" target="_blank" rel="noopener   noreferrer">CONTACT US</a>
-                     </button>
+                      <h1 className="carousel-text-heading text-uppercase">Photographers <span className="orange-text">Zone</span></h1>
+                     <p className="carousel-text-paragraph opacity-75 mb-4 banner-text">Want to make your moment happy!!!. Dont't worry I am here to capture your beautiful moment. I am covering many national and international photoshoot. <br/> So stop thinking and click the contact us button to talk with me.</p>
+                     <Link to='/contact' className="text-white contact-btn">Contact Us</Link>
                     </div>
                   </div>
                   <div className="carousel-item">
                     <img src={sliderImg2} className="d-block carousel-image" alt="..."/>
                     <div className="carousel-caption d-md-block">
-                      <h1 className="carousel-text-heading">PHOTOGRAPHERS</h1>
-                     <p className="carousel-text-paragraph opacity-75">We want to make your momment happy. We have covered many national and international event successfully. <br/> So if you want to make your time enjoyable, we are here to welcome you.</p>
-                     <button type="button" className="carousel-btn btn px-4 contact-btn"><a className="text-white" href="https://www.diccbd.com/" target="_blank" rel="noopener noreferrer">CONTACT US</a></button>
+                      <h1 className="carousel-text-heading text-uppercase">Photographers <span className="orange-text">Zone</span></h1>
+                     <p className="carousel-text-paragraph opacity-75 mb-4 banner-text">Want to make your moment happy!!!. Dont't worry I am here to capture your beautiful moment. I am covering many national and international photoshoot. <br/> So stop thinking and click the contact us button to talk with me.</p>
+                      <Link to='/contact' className="text-white contact-btn">Contact Us</Link>
                     </div>
                   </div>
                   <div className="carousel-item">
                     <img src={sliderImg3} className="d-block carousel-image" alt="..."/>
                     <div className="carousel-caption d-md-block">
-                      <h1 className="carousel-text-heading">PHOTOGRAPHERS</h1>
-                     <p className="carousel-text-paragraph opacity-75">We want to make your momment happy. We have covered many national and international event successfully. <br/> So if you want to make your time enjoyable, we are here to welcome you.</p>
-                     <button type="button" className="carousel-btn btn px-4 contact-btn"><a className="text-white" href="https://www.diccbd.com/" target="_blank" rel="noopener noreferrer">CONTACT US</a></button>
+                      <h1 className="carousel-text-heading text-uppercase">Photographers <span className="orange-text">Zone</span></h1>
+                     <p className="carousel-text-paragraph opacity-75 mb-4 banner-text">Want to make your moment happy!!!. Dont't worry I am here to capture your beautiful moment. I am covering many national and international photoshoot. <br/> So stop thinking and click the contact us button to talk with me.</p>
+                      <Link to='/contact' className="text-white contact-btn">Contact Us</Link>
                     </div>
                   </div>
                 </div>

@@ -12,7 +12,7 @@ const Home = () => {
             <div className='d-flex align-items-center justify-content-center'>
                 <img className='corner-icon corner-icon-one' src={corner} alt="" />
                 <img className='corner-icon corner-icon-two' src={corner1} alt="" />
-                <h1 className='text-uppercase my-5 pt-1'>our <span className='title-span'>services</span></h1>
+                <h1 className='text-uppercase my-5 pt-1'>my <span className='title-span'>services</span></h1>
                 <img className='corner-icon corner-icon-three'  src={corner} alt="" />
                 <img className='corner-icon corner-icon-four' src={corner1} alt="" />
             </div>
