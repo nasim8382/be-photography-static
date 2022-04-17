@@ -10,6 +10,11 @@ import footer6 from '../../../images/footer-img/foot-6.jpg';
 import footer7 from '../../../images/footer-img/foot-7.jpg';
 import footer8 from '../../../images/footer-img/foot-8.jpg';
 import footer9 from '../../../images/footer-img/foot-9.jpg';
+import facebook from '../../../images/social/facebook.png';
+import instagram from '../../../images/social/instagram.png';
+import twitter from '../../../images/social/twitter.png';
+import pinterest from '../../../images/social/pinterest.svg';
+import dribbble from '../../../images/social/dribbble.png';
 
 const Footer = () => {
     return (
@@ -20,8 +25,22 @@ const Footer = () => {
                         <div className='footer-text'>
                             <img src={logo} alt="" />
                             <p className='text-white footer-description'>BE-PHOTOGRAPHY is a renowned photography service. It has the latest equipments for premium level photoshoot. It will providing you unique and qualityful work. You can be in touch with our social media.</p>
-                            <div>
-                                
+                            <div className='text-white'>
+                                <a href="https://www.facebook.com/nasim8382/" target="_blank" rel="noopener noreferrer">
+                                    <img src={facebook} height={36} className="me-2" alt="facebook" />
+                                </a>
+                                <a href="https://www.instagram.com/nasimreza_neel/" target="_blank" rel="noopener noreferrer">
+                                    <img src={instagram} height={30} className="me-2"  alt="instagram" />
+                                </a>
+                                <a href="https://twitter.com/NasimReza14" target="_blank" rel="noopener noreferrer">
+                                    <img src={twitter} height={30} className="me-2"  alt="instagram" />
+                                </a>
+                                <a href="https://www.pinterest.com/nasimrezaneel/_saved/" target="_blank" rel="noopener noreferrer">
+                                    <img src={pinterest} height={28} className="me-2"  alt="pinterest" />
+                                </a>
+                                <a href="https://dribbble.com/nasim8382" target="_blank" rel="noopener noreferrer">
+                                    <img src={dribbble} height={30} className="me-2"  alt="dribbble" />
+                                </a>
                             </div>
                         </div>
                     </div>

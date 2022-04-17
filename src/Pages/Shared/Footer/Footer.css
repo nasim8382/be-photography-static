@@ -28,8 +28,8 @@
 
 @media only screen and (max-width: 576px){
     .footer-container {
-        height: 600px;
-        margin-top: 60px;
+        height: 660px;
+        margin-top: 80px;
     }
 
     .text-img-div {
@@ -50,15 +50,19 @@
 
 @media only screen and (min-width: 577px) and (max-width: 992px){
     .footer-container {
-        height: 300px;
+        height: 315px;
         margin-top: 60px;
     }
 
     .footer-text {
-        margin-top: 10px;
+        margin-top: 15px;
+    }
+
+    .footer-description {
+        margin: 10px 0;
     }
 
     .footer-img {
-        margin-top: -27px;
+        margin-top: -24px;
     }
 }
