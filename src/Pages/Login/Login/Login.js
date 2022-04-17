@@ -16,7 +16,7 @@ const Login = () => {
 
                 <div className='col-12 col-md-6 my-auto py-5 form-div'
                 style={{backgroundImage: `url(${background})`}}>
-                    <h2 className="my-4 text-center">Dear Client Please Sign In</h2>
+                    <h2 className="my-4 text-center form-title">Dear Client Please Sign In</h2>
                     <div className='login-form w-75  mx-auto'>
                         <form>
                             <label htmlFor="email">Email</label>

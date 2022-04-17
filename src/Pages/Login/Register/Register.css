@@ -3,9 +3,13 @@
     border-radius: 5px 30px;
 }
 
+.form-title {
+    color: purple;
+}
+
 .register-form input:not([type=checkbox]) {
     display: block;
-    margin-bottom: 10px;
+    margin-top: 30px;
     border: 1px solid rgb(249, 128, 18);
 }
 
@@ -24,6 +28,11 @@
     background-color: rgb(235, 235, 235);
     transition: 0.5s;
 }
+
+.register-error {
+    margin: 0;
+}
+
 .register-btn {
     color: rgb(249, 128, 18);
     background-color: white;
@@ -44,6 +53,14 @@
 
 .orange-text:hover {
     color: purple;
+}
+
+.purple {
+    color: purple;
+}
+
+.orange {
+    color: rgb(249, 128, 18);
 }
 
 @media only screen and (max-width:576px) {

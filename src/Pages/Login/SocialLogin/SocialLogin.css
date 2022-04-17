@@ -26,6 +26,12 @@
     background-color: rgb(249, 128, 18);
 }
 
+.spinner {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+}
+
 .sign-in-btn:hover {
     border: 1px solid rgb(249, 128, 18);
     background-color: rgb(249, 128, 18);
