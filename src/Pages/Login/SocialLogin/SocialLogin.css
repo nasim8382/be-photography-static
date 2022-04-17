@@ -1,0 +1,35 @@
+.google-sign-in-btn {
+    width: 75%;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.or-text {
+    margin: -10px 0;
+}
+
+.straight-line {
+    height: 1px;
+    width: 25%;
+    background-color: rgb(196, 193, 193);
+}
+
+.google-sign-in-btn:hover {
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:576px) {
+    .google-sign-in-btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .google-sign-in-btn {
+        width: 100%;
+    }
+}

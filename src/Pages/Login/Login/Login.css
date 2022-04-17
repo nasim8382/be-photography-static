@@ -1,0 +1,83 @@
+.form-div {
+    margin-left: -50px;
+    border-radius: 5px 30px;
+}
+
+.login-form input:not([type=checkbox]) {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid rgb(249, 128, 18);
+}
+
+.login-form label {
+    margin-bottom: 10px;
+}
+
+.input-field {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.input-field:hover {
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+}
+.login-btn {
+    color: rgb(249, 128, 18);
+    background-color: white;
+    padding: 5px 50px;
+}
+
+.login-btn:hover {
+    background-color: rgb(249, 128, 18);
+    border: none;
+    transition: 0.5s;
+    color: white;
+}
+
+.orange-text {
+    color: rgb(249, 128, 18);
+    cursor: pointer;
+}
+
+.orange-text:hover {
+    color: purple;
+}
+
+@media only screen and (max-width:576px) {
+    .login-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-div {
+        margin-bottom: 50px;
+    }
+
+    .form-div {
+        width: 94%;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .img-div {
+        margin: auto 0;
+    }
+
+    .form-div {
+        margin-left: 0px;
+        border-radius: 30px 5px;
+    }
+
+    .login-form {
+        width: 75%;
+    }
+}

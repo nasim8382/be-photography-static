@@ -1,0 +1,32 @@
+.register-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.register-form input:not([type=checkbox]) {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.register-form label {
+    margin-bottom: 10px;
+}
+
+.input-field {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+.input-field:hover {
+    background-color: rgb(235, 235, 235);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:576px) {
+    .register-form {
+        width: 75%;
+    }
+}
