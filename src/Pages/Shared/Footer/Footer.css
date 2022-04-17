@@ -13,6 +13,10 @@
     margin: 30px 0;
 }
 
+.social-icon a {
+    margin-right: 15px;
+}
+
 .copywrite-text {
     background-color: black;
     position: absolute;

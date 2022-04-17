@@ -25,21 +25,21 @@ const Footer = () => {
                         <div className='footer-text'>
                             <img src={logo} alt="" />
                             <p className='text-white footer-description'>BE-PHOTOGRAPHY is a renowned photography service. It has the latest equipments for premium level photoshoot. It will providing you unique and qualityful work. You can be in touch with our social media.</p>
-                            <div className='text-white'>
+                            <div className='social-icon'>
                                 <a href="https://www.facebook.com/nasim8382/" target="_blank" rel="noopener noreferrer">
-                                    <img src={facebook} height={36} className="me-2" alt="facebook" />
+                                    <img src={facebook} height={36} alt="facebook" />
                                 </a>
                                 <a href="https://www.instagram.com/nasimreza_neel/" target="_blank" rel="noopener noreferrer">
-                                    <img src={instagram} height={30} className="me-2"  alt="instagram" />
+                                    <img src={instagram} height={30} alt="instagram" />
                                 </a>
                                 <a href="https://twitter.com/NasimReza14" target="_blank" rel="noopener noreferrer">
-                                    <img src={twitter} height={30} className="me-2"  alt="instagram" />
+                                    <img src={twitter} height={30} alt="instagram" />
                                 </a>
                                 <a href="https://www.pinterest.com/nasimrezaneel/_saved/" target="_blank" rel="noopener noreferrer">
-                                    <img src={pinterest} height={28} className="me-2"  alt="pinterest" />
+                                    <img src={pinterest} height={28}  alt="pinterest" />
                                 </a>
                                 <a href="https://dribbble.com/nasim8382" target="_blank" rel="noopener noreferrer">
-                                    <img src={dribbble} height={30} className="me-2"  alt="dribbble" />
+                                    <img src={dribbble} height={30}  alt="dribbble" />
                                 </a>
                             </div>
                         </div>

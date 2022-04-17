@@ -20,7 +20,7 @@ const Header = () => {
                 <CustomLink className="me-5 menu-item" as={Link} to="blogs">BLOGS</CustomLink>
                 <CustomLink className="me-5 menu-item" as={Link} to="about">ABOUT</CustomLink>
                 <CustomLink className="me-5 menu-item" as={Link} to="contact">CONTACT</CustomLink>
-                <CustomLink className="me-5 menu-item" as={Link} to="login">LOGIN</CustomLink>
+                <CustomLink className="me-5 menu-item" as={Link} to="login">SIGN IN</CustomLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
