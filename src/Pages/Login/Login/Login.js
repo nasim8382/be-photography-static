@@ -27,7 +27,7 @@ const Login = () => {
 
                             <input className='mx-auto mt-4 mb-3 rounded text-uppercase login-btn' type="submit" value="Login" />
                         </form>
-                        <div className='d-flex justify-content-between'>
+                        <div className='register-forget-text'>
                             <p>need an Account?
                             <Link to='/register' className="orange-text text-decoration-none"> Register</Link>
                             </p>

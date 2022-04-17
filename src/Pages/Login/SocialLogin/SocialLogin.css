@@ -1,35 +1,53 @@
-.google-sign-in-btn {
+.sign-in-btn {
     width: 75%;
     margin: 20px auto;
+    padding: 10px;
     display: block;
-    border: 1px solid gray;
-    border-radius: 50px;
-    background-color: white;
+    border-radius: 5px;
+    background-color: rgb(151, 151, 151);
+    border: 1px solid rgb(151, 151, 151);
+}
+
+.sign-in-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
 }
 
 .or-text {
     margin: -10px 0;
+    color: purple;
 }
 
 .straight-line {
     height: 1px;
     width: 25%;
-    background-color: rgb(196, 193, 193);
+    background-color: rgb(249, 128, 18);
 }
 
-.google-sign-in-btn:hover {
-    border: 1px solid blue;
+.sign-in-btn:hover {
+    border: 1px solid rgb(249, 128, 18);
+    background-color: rgb(249, 128, 18);
     transition: 0.3s;
 }
 
 @media only screen and (max-width:576px) {
-    .google-sign-in-btn {
+    .sign-in-btn {
         width: 100%;
+    }
+
+    .straight-line {
+        width: 20%;
     }
 }
 
 @media only screen and (min-width:577px) and (max-width:992px) {
-    .google-sign-in-btn {
+    .sign-in-btn {
         width: 100%;
+    }
+
+    .straight-line {
+        width: 20%;
     }
 }

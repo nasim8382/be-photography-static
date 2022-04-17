@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import login1 from '../../../images/register.png';
+import register from '../../../images/register.png';
+import background from '../../../images/bg.jpg';
 import './Register.css';
 
 const Register = () => {
     return (
         <div className='container'>
-            <div className='row'>
+            <div className='row login-div'>
 
-                {<div className='col-6'>
-                    <img className='img-fluid' src={login1} alt="" />
-                </div>}
+                <div className='col-12 col-md-6 img-div'>
+                    <img className='img-fluid' src={register} alt="" />
+                </div>
 
-                <div className='col-6 my-auto'>
-                    <h2 className="text-primary text-center mt-3">Please Register</h2>
-                    <div className='register-form'>
+                <div className='col-12 col-md-6 my-auto py-4 form-div'
+                style={{backgroundImage: `url(${background})`}}>
+                    <h2 className="my-2 text-center">Welcome You</h2>
+                    <div className='login-form w-75  mx-auto'>
                         <form>
                             <label htmlFor="name">Name</label>
                             <input className='input-field' type="text" name="name" placeholder='Your Name'/>
@@ -26,10 +28,10 @@ const Register = () => {
                             <label htmlFor="email">Password</label>
                             <input className='input-field' type="password" name="password" placeholder='Your Password' required/>
 
-                            <input className='btn btn-primary text-white px-5 mx-auto mt-2 rounded text-uppercase' type="submit" value="Register" />
+                            <input className='mx-auto mt-4 mb-3 rounded text-uppercase login-btn' type="submit" value="Login" />
                         </form>
-                        <p className='text-center'>Already have an Account?
-                            <Link to='/login' className="text-primary text-decoration-none"> Login</Link>
+                        <p className='text-center'>have an Account?
+                            <Link to='/login' className="orange-text text-decoration-none"> Login</Link>
                         </p>
                         <SocialLogin></SocialLogin>
                     </div>

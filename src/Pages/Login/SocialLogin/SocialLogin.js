@@ -13,24 +13,30 @@ const SocialLogin = () => {
                 <div className='straight-line'></div>
             </div>
             <div>
-                <button className='google-sign-in-btn'>
+                <button className='sign-in-btn google-btn'>
                     <div className='d-flex justify-content-center  align-items-center'>
-                        <img height={25} src={google} alt="google-icon" />
-                        <h6 className='ms-2 mt-2 text-uppercase text-secondary'>Google Sign In</h6>
+                        <img className='me-2' height={25} src={google} alt="google-icon" />
+                        <p className='text-uppercase sign-in-text'>
+                            Google Sign In
+                        </p>
                     </div>
                 </button>
 
-                <button className='google-sign-in-btn'>
+                <button className='sign-in-btn'>
                     <div className='d-flex justify-content-center  align-items-center'>
-                        <img height={25} src={github} alt="google-icon" />
-                        <h6 className='ms-2 mt-2 text-uppercase text-secondary'>Github Sign In</h6>
+                        <img className='me-2' height={25} src={github} alt="google-icon" />
+                        <p className='text-uppercase sign-in-text'>
+                            Github Sign In
+                        </p>
                     </div>
                 </button>
 
-                <button className='google-sign-in-btn'>
-                    <div className='d-flex justify-content-center  align-items-center'>
-                        <img height={30} src={facebook} alt="google-icon" />
-                        <h6 className='ms-2 mt-2 text-uppercase text-secondary'>Facebook Sign In</h6>
+                <button className='sign-in-btn'>
+                    <div className='d-flex justify-content-center  align-items-center sign-in-hover'>
+                        <img className='me-2' height={30} src={facebook} alt="google-icon" />
+                        <p className='text-uppercase  sign-in-text'>
+                            Facebook Sign In 
+                        </p>
                     </div>
                 </button>
             </div>
