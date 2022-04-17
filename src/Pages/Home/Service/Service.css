@@ -1,0 +1,17 @@
+.service-title, .price-text {
+    color: purple;
+}
+
+.booking-btn {
+    background-color: white;
+    color: rgb(249, 128, 18);
+    border: 1px solid rgb(249, 128, 18);
+    padding: 5px 40px;
+}
+
+.booking-btn:hover {
+    background-color: rgb(249, 128, 18);
+    border: none;
+    transition: 0.5s;
+    color: white;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Portrait Photography",
+        "price": "1300",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/bdk5kD5/portrait.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Product Photography",
+        "price": "2500",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/ZSp5YjX/product.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Indoor Photography",
+        "price": "1200",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/7gBWnt1/indoor.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Outdoor Photography",
+        "price": "1500",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/mhTCNb4/outdoor.png"
+    },
+    {
+        "id": 5,
+        "name": "Modeling Photography",
+        "price": "1800",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/zrLXKMy/modeling.png"
+    },
+    {
+        "id": 6,
+        "name": "Fashion Photography",
+        "price": "2200",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/3RNctKY/fashion.png"
+    }
+]
