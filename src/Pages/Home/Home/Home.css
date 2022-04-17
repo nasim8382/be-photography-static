@@ -1,0 +1,29 @@
+.title-span {
+    color: rgb(249, 128, 18);
+}
+
+.corner-icon {
+    width: 50px;
+}
+
+.corner-icon-one {
+    transform: rotate(180deg);
+    margin-top: -30px;
+    margin-right: -50px;
+}
+
+.corner-icon-two {
+    transform: rotate(180deg);
+    margin-bottom: -40px;
+    margin-right: -20px;
+}
+
+.corner-icon-three {
+    margin-bottom: -40px;
+    margin-left: -20px;
+}
+
+.corner-icon-four {
+    margin-top: -30px;
+    margin-left: -50px;
+}

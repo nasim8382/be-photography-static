@@ -1,0 +1,45 @@
+.carousel-indicators [data-bs-target]{
+    height: 3px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: rgb(249, 128, 18);
+}
+.carousel-image{
+    width: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    top: 0%;
+    padding-top: 5%;
+    padding-bottom: 1.25rem;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner .btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-btn {
+    border: 1px solid white;
+}
+
+.contact-btn:hover {
+    background-color: rgb(249, 128, 18);
+    border: none;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px){
+    .carousel-caption {
+        padding-top: 50%;
+    }
+    .carousel-image{
+        width: auto;
+        height: 600px;
+    }
+}
