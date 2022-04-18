@@ -1,0 +1,30 @@
+.contact {
+    padding-bottom: 50px;
+}
+
+.contact-div {
+    background-color: black;
+    padding: 50px;
+    color: white;
+    margin-top: 50%;
+}
+
+.contact-div img {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width:576px) {
+    .contact-div {
+        margin-top: 10%;
+    }
+
+    .contact-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .contact-div {
+        margin-top: 10%;
+    }
+}
