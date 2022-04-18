@@ -1,7 +1,7 @@
 .checkout-form {
     width: 70%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 
 .checkout-input {
@@ -29,4 +29,21 @@
     border: none;
     transition: 0.5s;
     color: white;
+}
+
+@media only screen and (max-width:576px) {
+    .checkout-form {
+        width: 100%;
+    }
+
+    .checkout-input {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .checkout-form {
+        width: 100%;
+    }
 }

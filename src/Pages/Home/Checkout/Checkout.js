@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from 'react-hook-form';
 import './Checkout.css';
+import corner from '../../../images/icon/corner-icon-7.jpg';
+import corner1 from '../../../images/icon/corner-icon-8.jpg';
 
 const Checkout = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -9,6 +11,15 @@ const Checkout = () => {
 
   return (
         <div className="container">
+
+            <div className='d-flex align-items-center justify-content-center services-title'>
+                <img className='corner-icon corner-icon-one' src={corner} alt="" />
+                <img className='corner-icon corner-icon-two' src={corner1} alt="" />
+                <h1 className='text-uppercase my-5 pt-1'>your <span className='title-span'>information</span></h1>
+                <img className='corner-icon corner-icon-three'  src={corner} alt="" />
+                <img className='corner-icon corner-icon-four' src={corner1} alt="" />
+            </div>
+
             <div className="checkout-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input className="checkout-input"
@@ -30,7 +41,7 @@ const Checkout = () => {
                         <option value="Dr">Dr</option>
                     </select>
 
-                    <input className="checkout-input text-uppercase checkout-submit" type="submit" />
+                    <input className="checkout-input text-uppercase checkout-submit" type="submit"/>
                 </form>
             </div>
         </div>
