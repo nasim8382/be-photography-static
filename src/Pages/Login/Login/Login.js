@@ -5,7 +5,8 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import background from '../../../images/bg.jpg';
 import './Login.css';
 import auth from '../../../firebase.init';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import loadingImg from '../../../images/loading.gif';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Login = () => {
 
     let from = location.state?.from?.pathname || "/";
     let errorElement;
-    let loadingText;
+    let loadingElement;
 
     const [
         signInWithEmailAndPassword,
@@ -21,6 +22,8 @@ const Login = () => {
         loading,
         error
     ] = useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -30,8 +33,15 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    const resetPassword = async(e) => {
+        console.log('biribulla');
+        const email = e.target.email?.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+    }
+
     if (loading) {
-        loadingText = <p className='text-center purple'>Loading...</p>;
+        loadingElement = <img className='spinner' src={loadingImg} alt="spinner" />;
     }
 
     if (error) {
@@ -61,8 +71,8 @@ const Login = () => {
                             <label htmlFor="email">Password</label>
                             <input className='input-field' type="password" name="password" placeholder='Your Password' required/>
 
-                            {loadingText}
                             {errorElement}
+                            {loadingElement}
 
                             <input className='mx-auto mt-4 mb-3 rounded text-uppercase login-btn' type="submit" value="Login" />
                         </form>
@@ -70,7 +80,7 @@ const Login = () => {
                             <p>need an Account?
                             <Link to='/register' className="orange-text text-decoration-none"> Register</Link>
                             </p>
-                            <p className="orange-text">Forget Password?</p>
+                            <p onClick={resetPassword} className="orange-text">Forget Password?</p>
                         </div>
                         <SocialLogin></SocialLogin>
                     </div>

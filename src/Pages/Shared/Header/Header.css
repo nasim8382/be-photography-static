@@ -3,3 +3,10 @@
     border: none;
     margin-top: -7px;
 }
+
+@media only screen and (max-width: 992px){
+    .sign-out-btn {
+        display: inline-flex;
+        margin-left: -12px;
+    }
+}

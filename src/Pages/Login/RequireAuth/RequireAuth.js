@@ -1,12 +1,16 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import loadingImg from '../../../images/loading.gif';
 
 const RequireAuth = ({children}) => {
-    const navigate = useNavigate();
+    const [user, loading] = useAuthState(auth);
     const location = useLocation();
-    const [user] = useAuthState(auth);
+
+    if (loading) {
+        return <img className='d-block mx-auto my-5 py-5' src={loadingImg} alt="loading" />;
+    }
 
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;

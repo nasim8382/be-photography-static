@@ -4,8 +4,9 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import register from '../../../images/register.png';
 import background from '../../../images/bg.jpg';
 import './Register.css';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import loadingImg from '../../../images/loading.gif';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -16,10 +17,12 @@ const Register = () => {
 
     const [
         createUserWithEmailAndPassword,
-        user
-    ] = useCreateUserWithEmailAndPassword(auth);
+        loading
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
-    const handleRegister = e => {
+    const [updateProfile] = useUpdateProfile(auth);
+
+    const handleRegister = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -31,20 +34,29 @@ const Register = () => {
             return;
         }
 
-        if (password.length < 8) {
-            setError('Password must be 8 characters or more!!!');
+        if (password.length < 6) {
+            setError('Password must have 6 characters or more!!!');
             return;
         }
 
-        if (agree) {
-            createUserWithEmailAndPassword(email, password);
+        if (!/(?=.*[0-9])/.test(password)) {
+            setError('Password must have at least one number!!!');
+            return;
         }
-    }
 
-    if (user) {
+        if (!/(?=.*[!@#$%^&*])/.test(password)) {
+            setError('Password must have at least one special character!!!');
+            return;
+        }
+
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
         navigate('/home');
     }
 
+    if (loading) {
+        loadingElement = <img className='spinner' src={loadingImg} alt="loading" />;
+    }
 
     return (
         <div className='container'>
@@ -73,6 +85,7 @@ const Register = () => {
                             className={`mt-2 ${agree ? 'purple' : 'orange'}`} htmlFor="terms">Agree to terms and Conditions</label>
 
                             <p className='text-danger register-error'>{error}</p>
+                            {loadingElement}
 
                             <input disabled={!agree} className='mx-auto mt-2 mb-3 rounded text-uppercase register-btn' type="submit" value="Register" />
                         </form>

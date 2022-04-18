@@ -6,7 +6,7 @@ import facebook from '../../../images/social/facebook.png';
 import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import spinner from '../../../images/spinner1.gif';
+import spinner from '../../../images/spinner.gif';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
