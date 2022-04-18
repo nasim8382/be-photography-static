@@ -3,42 +3,42 @@
         "id": 1,
         "name": "Portrait Photography",
         "price": "1300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Portrait photography is a big art in photography world. I do like to shoot portrait photos. I normally cover men and women both for portrait shoots. I have high quality and expensive prime lense for portrait photos. So book now to shoot unique portraits.",
         "img": "https://i.ibb.co/bdk5kD5/portrait.jpg"
     },
     {
         "id": 2,
         "name": "Product Photography",
         "price": "2500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Looking for a photographer to shoot your products image. We are here. We will providing you clean background product image. We shoot any kind of products. You can hire us, we will go your place and will shoot your products.",
         "img": "https://i.ibb.co/ZSp5YjX/product.jpg"
     },
     {
         "id": 3,
         "name": "Indoor Photography",
         "price": "1200",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "We have well a well decorated photo studio to shoot indoor photo. We have big and strong light set up to make many variation of work. We provided large and sharped image. So want to get your indoor photoshoot plaese book now.",
         "img": "https://i.ibb.co/7gBWnt1/indoor.jpg"
     },
     {
         "id": 4,
         "name": "Outdoor Photography",
         "price": "1500",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "I have a lot of experience in outdoor photography. Basically I love to shoot outdoor photos. I can opmiza my work as I want. For outdoor photoshoot any kind of drees or makeup will not included with our package. Hire me to shoot.",
         "img": "https://i.ibb.co/mhTCNb4/outdoor.png"
     },
     {
         "id": 5,
         "name": "Modeling Photography",
         "price": "1800",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "I will make your normal pose to an extraordinary attractive looking pose. I have worked with many professional male and female models. If you want to get some professional images to show any competition you can book now imediately.",
         "img": "https://i.ibb.co/zrLXKMy/modeling.png"
     },
     {
         "id": 6,
         "name": "Fashion Photography",
         "price": "2200",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "At the age of modern era all peoples are fashionable. Different types of fashion photography are popular now a days. Mainly I shoot fashion photography for your clothes type business. So if you are interested to shoot please book now.",
         "img": "https://i.ibb.co/3RNctKY/fashion.png"
     }
 ]
