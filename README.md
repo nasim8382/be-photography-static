@@ -28,6 +28,8 @@ Be-Photography [Live Site Link](https://be-photography-98213.web.app/).
 
 * I have integrated some social media sign in method
 
+* I have used React Hook Form in checkout page
+
 ## Technologies I used in this project-
 
 * Bootstrap
@@ -43,4 +45,6 @@ Be-Photography [Live Site Link](https://be-photography-98213.web.app/).
 * React Toastify
 
 * React Environment Variables
+
+* React Hook Form
 
