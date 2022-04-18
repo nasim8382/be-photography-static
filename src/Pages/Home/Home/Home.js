@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import corner from '../../../images/icon/corner-icon-7.jpg';
 import corner1 from '../../../images/icon/corner-icon-8.jpg';
 import Banner from '../Banner/Banner';
+import Equipments from '../Equipments/Equipments';
 import Service from '../Service/Service';
 import './Home.css';
 
@@ -36,6 +37,8 @@ const Home = () => {
                     }
                 </div>
             </div>
+
+            <Equipments></Equipments>
 
         </div>
     );

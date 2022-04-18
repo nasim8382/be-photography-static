@@ -30,6 +30,11 @@
     margin-top: -77px;
 }
 
+.footer-img img:hover {
+    transform: scale(.7);
+    transition: 0.5s ease-in-out;
+}
+
 @media only screen and (max-width: 576px){
     .footer-container {
         height: 660px;

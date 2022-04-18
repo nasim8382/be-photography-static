@@ -1,0 +1,42 @@
+.equipments {
+    margin-top: -150px;
+}
+
+.equipments-img {
+    position: relative;
+}
+
+.equipments-text {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    background-color: rgb(249, 128, 18);
+    color: white;
+    padding: 5px 15px;
+    display: none;
+}
+
+.equipments-img:hover .equipments-text {
+    display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .equipments-img img {
+        margin-bottom: 30px;
+    }
+
+    .equipments {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width: 992px) {
+    .equipments-img img {
+        margin-bottom: 30px;
+    }
+
+    .equipments {
+        margin-top: -50px;
+    }
+}
+
