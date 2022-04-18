@@ -20,7 +20,7 @@ const Register = () => {
         loading
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
-    const [updateProfile] = useUpdateProfile(auth);
+    const [updateProfile, updating] = useUpdateProfile(auth);
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -54,7 +54,7 @@ const Register = () => {
         navigate('/home');
     }
 
-    if (loading) {
+    if (loading || updating) {
         loadingElement = <img className='spinner' src={loadingImg} alt="loading" />;
     }
 

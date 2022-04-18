@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../../images/login.png';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -7,8 +7,11 @@ import './Login.css';
 import auth from '../../../firebase.init';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import loadingImg from '../../../images/loading.gif';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
+    const emailRef = useRef('');
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -23,7 +26,7 @@ const Login = () => {
         error
     ] = useSignInWithEmailAndPassword(auth);
 
-    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -33,14 +36,18 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
-    const resetPassword = async(e) => {
-        console.log('biribulla');
-        const email = e.target.email?.value;
-        await sendPasswordResetEmail(email);
-        alert('Sent email');
+    const resetPassword = async() => {
+        const email = emailRef.current.value;
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('Successfully sent reset link to your email');
+        }
+        else {
+            toast('Please enter your email address !!');
+        }
     }
 
-    if (loading) {
+    if (loading || sending) {
         loadingElement = <img className='spinner' src={loadingImg} alt="spinner" />;
     }
 
@@ -66,7 +73,7 @@ const Login = () => {
                     <div className='login-form w-75  mx-auto'>
                         <form onSubmit={handleSubmit}>
                             <label htmlFor="email">Email</label>
-                            <input className='input-field' type="email" name="email" placeholder='Email Address' required/>
+                            <input ref={emailRef}  className='input-field' type="email" name="email" placeholder='Email Address' required/>
 
                             <label htmlFor="email">Password</label>
                             <input className='input-field' type="password" name="password" placeholder='Your Password' required/>
@@ -83,6 +90,7 @@ const Login = () => {
                             <p onClick={resetPassword} className="orange-text">Forget Password?</p>
                         </div>
                         <SocialLogin></SocialLogin>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>
