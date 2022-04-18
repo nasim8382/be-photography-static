@@ -1,0 +1,26 @@
+.blogs {
+    width: 60%;
+    margin: 75px auto;
+    padding-bottom: 200px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: purple !important;
+    background-color: antiquewhite !important;
+}
+
+.text-color {
+    color: rgb(41, 167, 16);
+}
+
+@media only screen and (max-width:576px) {
+    .blogs {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .blogs {
+        width: 80%;
+    }
+}
