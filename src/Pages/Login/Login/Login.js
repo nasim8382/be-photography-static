@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import login from '../../../images/login.png';
+import login from '../../../images/login.jpg';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import background from '../../../images/bg.jpg';
 import './Login.css';
