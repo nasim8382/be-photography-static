@@ -40,15 +40,15 @@ const Login = () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Successfully sent reset link to your email');
+            toast.success('Successfully sent reset link to your email');
         }
         else {
-            toast('Please enter your email address !!');
+            toast.error('Please enter your email address');
         }
     }
 
     if (loading || sending) {
-        loadingElement = <img className='spinner' src={loadingImg} alt="spinner" />;
+        loadingElement = <img className='spinner mt-4' src={loadingImg} alt="spinner" />;
     }
 
     if (error) {
@@ -90,7 +90,7 @@ const Login = () => {
                             <p onClick={resetPassword} className="orange-text">Forget Password?</p>
                         </div>
                         <SocialLogin></SocialLogin>
-                        <ToastContainer />
+                        <ToastContainer position="top-center" />
                     </div>
                 </div>
             </div>

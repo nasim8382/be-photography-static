@@ -22,6 +22,10 @@ const Register = () => {
 
     const [updateProfile, updating] = useUpdateProfile(auth);
 
+    if (loading || updating) {
+        loadingElement = <img className='spinner' src={loadingImg} alt="loading" />;
+    }
+
     const handleRegister = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -52,10 +56,6 @@ const Register = () => {
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
         navigate('/home');
-    }
-
-    if (loading || updating) {
-        loadingElement = <img className='spinner' src={loadingImg} alt="loading" />;
     }
 
     return (
